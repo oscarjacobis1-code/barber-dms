@@ -1,0 +1,325 @@
+/* =========================================================
+   SUÁREZ — Barbería & Salón
+   Design tokens
+   ========================================================= */
+:root{
+  --cream:       #EFE2CE;
+  --cream-card:  #F8F1E5;
+  --rust:        #B24F2A;
+  --rust-deep:   #8A3A1E;
+  --espresso:    #241A13;
+  --espresso-70: rgba(36,26,19,0.7);
+  --espresso-45: rgba(36,26,19,0.45);
+  --brass:       #A6813F;
+  --brass-soft:  rgba(166,129,63,0.35);
+  --tobacco:     #5B3A26;
+  --line:        rgba(36,26,19,0.14);
+
+  --display: "Fraunces", serif;
+  --body: "Archivo", sans-serif;
+
+  --wrap: 1180px;
+}
+
+*,*::before,*::after{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{
+  margin:0;
+  background:var(--cream);
+  color:var(--espresso);
+  font-family:var(--body);
+  font-size:16px;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+img{ max-width:100%; display:block; }
+a{ color:inherit; text-decoration:none; }
+h1,h2,h3{ font-family:var(--display); font-weight:900; margin:0; letter-spacing:-0.01em; }
+p{ margin:0; }
+.wrap{ max-width:var(--wrap); margin:0 auto; padding:0 32px; }
+
+@media (max-width:640px){ .wrap{ padding:0 20px; } }
+
+/* subtle overall grain / warmth so cream isn't flat */
+body::before{
+  content:"";
+  position:fixed; inset:0;
+  background-image:
+    radial-gradient(rgba(36,26,19,0.035) 1px, transparent 1px);
+  background-size:3px 3px;
+  pointer-events:none;
+  z-index:0;
+  opacity:0.6;
+}
+
+/* =========================================================
+   NAV
+   ========================================================= */
+.nav{
+  position:sticky; top:0; z-index:50;
+  background:rgba(239,226,206,0.92);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+}
+.nav .wrap{
+  display:flex; align-items:center; justify-content:space-between;
+  height:76px;
+}
+.nav-mark{
+  font-family:var(--display);
+  font-weight:900;
+  font-size:22px;
+  letter-spacing:0.06em;
+}
+.nav-mark span{ color:var(--rust); }
+.nav-links{
+  display:flex; align-items:center; gap:36px;
+  font-size:14px; font-weight:600;
+  letter-spacing:0.03em; text-transform:uppercase;
+}
+.nav-links a{
+  position:relative; padding:4px 0; color:var(--espresso-70);
+  transition:color .2s ease;
+}
+.nav-links a:hover, .nav-links a.active{ color:var(--espresso); }
+.nav-links a.active::after{
+  content:""; position:absolute; left:0; right:0; bottom:-3px; height:2px;
+  background:var(--rust);
+}
+.nav-cta{
+  background:var(--espresso); color:var(--cream) !important;
+  padding:11px 20px; border-radius:2px;
+  font-size:13px; font-weight:700; letter-spacing:0.04em; text-transform:uppercase;
+  transition:background .2s ease;
+}
+.nav-cta:hover{ background:var(--rust); }
+.nav-toggle{ display:none; background:none; border:0; cursor:pointer; padding:4px; }
+.nav-toggle span, .nav-toggle span::before, .nav-toggle span::after{
+  content:""; display:block; width:24px; height:2px; background:var(--espresso);
+  position:relative; transition:.2s ease;
+}
+.nav-toggle span::before{ position:absolute; top:-7px; }
+.nav-toggle span::after{ position:absolute; top:7px; }
+
+@media (max-width:860px){
+  .nav-links{
+    position:fixed; inset:76px 0 0 0; height:calc(100vh - 76px);
+    background:var(--cream);
+    flex-direction:column; justify-content:flex-start; align-items:flex-start;
+    padding:40px 28px; gap:28px; font-size:16px;
+    transform:translateX(100%); transition:transform .3s ease;
+  }
+  .nav-links.open{ transform:translateX(0); }
+  .nav-toggle{ display:block; }
+}
+
+/* =========================================================
+   TILE SIGNATURE — repeating cement-tile motif used as dividers
+   ========================================================= */
+.tile-strip{
+  width:100%; height:34px; display:block; position:relative; z-index:1;
+}
+.tile-strip.flip{ transform:scaleY(-1); }
+
+/* =========================================================
+   HERO
+   ========================================================= */
+.hero{
+  position:relative; z-index:1;
+  padding:96px 0 64px;
+  overflow:hidden;
+}
+.hero-grid{
+  display:grid; grid-template-columns:1.15fr 0.85fr; gap:64px; align-items:center;
+}
+.eyebrow{
+  font-family:var(--display); font-style:italic; font-weight:500;
+  color:var(--rust); font-size:20px; margin-bottom:18px; display:block;
+}
+.hero h1{
+  font-size:clamp(48px,6.4vw,88px);
+  line-height:0.96;
+  margin-bottom:22px;
+}
+.hero-sub{
+  font-size:18px; color:var(--espresso-70); max-width:46ch; margin-bottom:34px;
+}
+.hero-actions{ display:flex; gap:16px; flex-wrap:wrap; }
+.btn{
+  display:inline-flex; align-items:center; gap:10px;
+  padding:15px 28px; border-radius:2px;
+  font-weight:700; font-size:13px; letter-spacing:0.05em; text-transform:uppercase;
+  transition:all .2s ease; border:1px solid transparent; cursor:pointer;
+}
+.btn-primary{ background:var(--rust); color:var(--cream); }
+.btn-primary:hover{ background:var(--rust-deep); }
+.btn-ghost{ border-color:var(--espresso); color:var(--espresso); }
+.btn-ghost:hover{ background:var(--espresso); color:var(--cream); }
+
+.hero-portrait{
+  position:relative;
+  aspect-ratio:4/5;
+  background:
+    linear-gradient(160deg, var(--tobacco) 0%, var(--espresso) 100%);
+  border-radius:2px;
+  display:flex; align-items:center; justify-content:center;
+  overflow:hidden;
+}
+.hero-portrait .frame-label{
+  position:absolute; bottom:22px; left:22px; right:22px;
+  color:rgba(248,241,229,0.75); font-size:12px; letter-spacing:0.08em; text-transform:uppercase;
+  border-top:1px solid rgba(248,241,229,0.25); padding-top:12px;
+}
+.hero-portrait .initials{
+  font-family:var(--display); font-weight:900; font-size:120px; color:rgba(248,241,229,0.14);
+  letter-spacing:-0.02em;
+}
+@media (max-width:860px){
+  .hero-grid{ grid-template-columns:1fr; }
+  .hero{ padding:56px 0 44px; }
+}
+
+/* =========================================================
+   SECTION HEADERS
+   ========================================================= */
+.section{ position:relative; z-index:1; padding:88px 0; }
+.section-tight{ padding:64px 0; }
+.section-head{
+  display:flex; align-items:flex-end; justify-content:space-between; gap:40px;
+  margin-bottom:52px; flex-wrap:wrap;
+}
+.section-head h2{ font-size:clamp(34px,3.6vw,50px); }
+.section-head .eyebrow{ margin-bottom:10px; }
+.section-note{ max-width:38ch; color:var(--espresso-70); font-size:15px; padding-bottom:6px; }
+
+.dark{ background:var(--espresso); color:var(--cream); }
+.dark .eyebrow{ color:var(--brass); }
+.dark .section-note{ color:rgba(248,241,229,0.65); }
+
+/* =========================================================
+   ABOUT
+   ========================================================= */
+.about-grid{
+  display:grid; grid-template-columns:0.9fr 1.1fr; gap:64px; align-items:start;
+}
+.about-quote{
+  font-family:var(--display); font-style:italic; font-weight:500;
+  font-size:clamp(24px,2.4vw,32px); line-height:1.35; color:var(--espresso);
+}
+.about-body p{ color:var(--espresso-70); font-size:16px; margin-bottom:18px; }
+.about-body p:last-child{ margin-bottom:0; }
+.stat-row{ display:flex; gap:48px; margin-top:36px; flex-wrap:wrap; }
+.stat b{ display:block; font-family:var(--display); font-size:34px; font-weight:900; color:var(--rust); }
+.stat span{ font-size:13px; text-transform:uppercase; letter-spacing:0.04em; color:var(--espresso-70); }
+@media (max-width:860px){ .about-grid{ grid-template-columns:1fr; gap:32px; } }
+
+/* =========================================================
+   SERVICES — priced like a real barbería menu, not a numbered list
+   ========================================================= */
+.menu{ border-top:1px solid var(--line); }
+.menu-row{
+  display:flex; align-items:baseline; justify-content:space-between; gap:24px;
+  padding:26px 0; border-bottom:1px solid var(--line);
+}
+.menu-row-main{ display:flex; align-items:baseline; gap:18px; flex:1; min-width:0; }
+.menu-name{ font-family:var(--display); font-weight:700; font-size:21px; white-space:nowrap; }
+.menu-desc{ color:var(--espresso-45); font-size:14px; }
+.menu-fill{
+  flex:1; border-bottom:1px dotted var(--espresso-45); transform:translateY(-6px);
+  min-width:24px;
+}
+.menu-price{ font-family:var(--display); font-weight:700; font-size:21px; color:var(--rust); white-space:nowrap; }
+@media (max-width:640px){
+  .menu-row{ flex-wrap:wrap; }
+  .menu-fill{ display:none; }
+  .menu-row-main{ flex-wrap:wrap; }
+}
+
+/* =========================================================
+   TESTIMONIAL
+   ========================================================= */
+.testimonial{ text-align:center; max-width:760px; margin:0 auto; }
+.testimonial p{
+  font-family:var(--display); font-style:italic; font-weight:500;
+  font-size:clamp(24px,2.8vw,34px); line-height:1.4;
+}
+.testimonial cite{
+  display:block; margin-top:26px; font-style:normal; font-size:13px;
+  letter-spacing:0.06em; text-transform:uppercase; color:var(--brass);
+}
+
+/* =========================================================
+   CONTACT / VISIT
+   ========================================================= */
+.visit-grid{
+  display:grid; grid-template-columns:1fr 1fr; gap:64px;
+}
+.visit-block h3{ font-size:15px; text-transform:uppercase; letter-spacing:0.06em; color:var(--brass); margin-bottom:14px; }
+.visit-block p, .visit-block a{ font-size:17px; color:var(--cream); display:block; margin-bottom:8px; }
+.visit-block a:hover{ color:var(--rust); }
+.hours-row{ display:flex; justify-content:space-between; max-width:340px; padding:8px 0; border-bottom:1px solid rgba(248,241,229,0.12); font-size:15px; }
+@media (max-width:760px){ .visit-grid{ grid-template-columns:1fr; gap:36px; } }
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+.footer{
+  padding:28px 0; border-top:1px solid rgba(248,241,229,0.12);
+  display:flex; justify-content:space-between; align-items:center;
+  font-size:13px; color:rgba(248,241,229,0.5); flex-wrap:wrap; gap:12px;
+}
+
+/* =========================================================
+   WORK PAGE — gallery
+   ========================================================= */
+.gallery-head{ padding:64px 0 20px; text-align:center; }
+.gallery-head .eyebrow{ display:inline-block; }
+.gallery-head h1{ font-size:clamp(40px,5.6vw,64px); }
+.filter-row{
+  display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin:30px 0 8px;
+}
+.filter-btn{
+  padding:9px 18px; border:1px solid var(--espresso); border-radius:999px;
+  font-size:13px; font-weight:600; letter-spacing:0.03em; text-transform:uppercase;
+  cursor:pointer; background:transparent; transition:.2s ease;
+}
+.filter-btn.active, .filter-btn:hover{ background:var(--espresso); color:var(--cream); }
+
+.gallery-grid{
+  display:grid; grid-template-columns:repeat(3,1fr); gap:22px;
+  padding:40px 0 90px;
+}
+.gallery-item{
+  position:relative; aspect-ratio:4/5; overflow:hidden; border-radius:2px;
+  background:linear-gradient(155deg, var(--tobacco), var(--espresso));
+  cursor:default;
+}
+.gallery-item .tag-code{
+  position:absolute; top:16px; left:16px; font-family:var(--display); font-weight:900;
+  font-size:13px; letter-spacing:0.08em; color:rgba(248,241,229,0.55); text-transform:uppercase;
+}
+.gallery-item .cap{
+  position:absolute; left:16px; right:16px; bottom:16px;
+  color:var(--cream); font-size:14px; font-weight:600;
+  border-top:1px solid rgba(248,241,229,0.25); padding-top:10px;
+}
+.gallery-item .cap small{
+  display:block; font-weight:400; color:rgba(248,241,229,0.55); font-size:12px; margin-top:3px;
+}
+.gallery-item::after{
+  content:""; position:absolute; inset:0;
+  background:radial-gradient(circle at 30% 20%, rgba(178,79,42,0.35), transparent 60%);
+  mix-blend-mode:overlay;
+}
+.gallery-item[data-cat="beard"]::after{ background:radial-gradient(circle at 70% 75%, rgba(166,129,63,0.4), transparent 60%); }
+.gallery-item[data-cat="color"]::after{ background:radial-gradient(circle at 50% 50%, rgba(178,79,42,0.5), transparent 65%); }
+
+@media (max-width:900px){ .gallery-grid{ grid-template-columns:repeat(2,1fr); } }
+@media (max-width:560px){ .gallery-grid{ grid-template-columns:1fr; } }
+
+.reveal{ opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease; }
+.reveal.in{ opacity:1; transform:none; }
+@media (prefers-reduced-motion:reduce){
+  .reveal{ opacity:1; transform:none; transition:none; }
+  html{ scroll-behavior:auto; }
+}
