@@ -1,0 +1,87 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "site"
+    label: "Website Content"
+    files:
+      - file: "content.json"
+        label: "Suárez Site Content"
+        name: "content"
+        fields:
+          - label: "Business Info"
+            name: "business"
+            widget: "object"
+            fields:
+              - { label: "Business Name", name: "name", widget: "string" }
+              - { label: "Phone (displayed)", name: "phone_display", widget: "string" }
+              - { label: "Phone (dial link, e.g. +15925550142)", name: "phone_link", widget: "string" }
+              - { label: "WhatsApp Number (digits only, e.g. 5925550142)", name: "whatsapp_link", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Address Line 1", name: "address_line1", widget: "string" }
+              - { label: "Address Line 2", name: "address_line2", widget: "string" }
+              - { label: "Booking Link (Setmore URL)", name: "booking_url", widget: "string" }
+
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow Text", name: "eyebrow", widget: "string" }
+              - { label: "Heading Line 1", name: "heading_line1", widget: "string" }
+              - { label: "Heading Line 2", name: "heading_line2", widget: "string" }
+              - { label: "Subheading", name: "subheading", widget: "text" }
+              - { label: "Portrait Photo (leave empty to keep placeholder)", name: "portrait_image", widget: "image", required: false }
+              - { label: "Placeholder Initials", name: "portrait_initials", widget: "string" }
+              - { label: "Portrait Caption", name: "portrait_caption", widget: "string" }
+
+          - label: "About Section"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Pull Quote", name: "quote", widget: "text" }
+              - { label: "Paragraph 1", name: "paragraph1", widget: "text" }
+              - { label: "Paragraph 2", name: "paragraph2", widget: "text" }
+              - label: "Stats"
+                name: "stats"
+                widget: "list"
+                fields:
+                  - { label: "Number / Short Label", name: "number", widget: "string" }
+                  - { label: "Caption", name: "label", widget: "string" }
+
+          - label: "Services & Pricing"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Service Name", name: "name", widget: "string" }
+              - { label: "Description", name: "desc", widget: "string" }
+              - { label: "Price (e.g. $35)", name: "price", widget: "string" }
+
+          - label: "Testimonial"
+            name: "testimonial"
+            widget: "object"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Attribution", name: "cite", widget: "string" }
+
+          - label: "Hours"
+            name: "hours"
+            widget: "list"
+            fields:
+              - { label: "Day(s)", name: "day", widget: "string" }
+              - { label: "Time", name: "time", widget: "string" }
+
+          - label: "Gallery (Work Page)"
+            name: "gallery"
+            widget: "list"
+            fields:
+              - label: "Category"
+                name: "cat"
+                widget: "select"
+                options: ["cut", "beard", "color"]
+              - { label: "Category Label (shown on site)", name: "cat_label", widget: "string" }
+              - { label: "Title / Style Name", name: "title", widget: "string" }
+              - { label: "Photo (leave empty to keep placeholder)", name: "image", widget: "image", required: false }
