@@ -1,6 +1,6 @@
 {
   "business": {
-    "name": "Suárez",
+    "name": "Romeo ",
     "phone_display": "+592 555 0142",
     "phone_link": "+15925550142",
     "whatsapp_link": "5925550142",
@@ -10,7 +10,7 @@
     "booking_url": "https://booking.setmore.com/REPLACE-WITH-YOUR-LINK"
   },
   "hero": {
-    "eyebrow": "Barbería & Salón — Georgetown",
+    "eyebrow": "Barbería & Salón — Georgetown and Cuba",
     "heading_line1": "Corte y estilo",
     "heading_line2": "con carácter.",
     "subheading": "Three decades behind the chair. Precision fades, straight-razor finishes, and color work for men who don't ask twice for the same result.",
@@ -23,36 +23,119 @@
     "paragraph1": "Ricardo learned the trade in Havana before bringing it to Georgetown — old-world technique, no shortcuts. Every service starts the same way: a conversation about your hair, your face, and what you actually want to look like on a Tuesday, not just for a photo.",
     "paragraph2": "The shop keeps a short client list on purpose. Fewer chairs, more attention, and a standard that doesn't change whether it's your first visit or your two-hundredth.",
     "stats": [
-      { "number": "30+", "label": "Years Behind the Chair" },
-      { "number": "1-on-1", "label": "Every Appointment" },
-      { "number": "By Appt.", "label": "No Walk-In Rush" }
+      {
+        "number": "30+",
+        "label": "Years Behind the Chair"
+      },
+      {
+        "number": "1-on-1",
+        "label": "Every Appointment"
+      },
+      {
+        "number": "By Appt.",
+        "label": "No Walk-In Rush"
+      }
     ]
   },
   "services": [
-    { "name": "Classic Cut", "desc": "Scissor & clipper, tailored to face shape", "price": "$35" },
-    { "name": "Cut + Beard Sculpt", "desc": "Full shape-up with straight razor lines", "price": "$50" },
-    { "name": "Hot Towel Straight Razor Shave", "desc": "Traditional lather, single-blade finish", "price": "$40" },
-    { "name": "Gray Blending & Color", "desc": "Natural, low-maintenance tone correction", "price": "$65" },
-    { "name": "The Full Service", "desc": "Cut, beard, hot towel shave, styling", "price": "$75" }
+    {
+      "name": "Classic Cut",
+      "desc": "Scissor & clipper, tailored to face shape",
+      "price": "$35"
+    },
+    {
+      "name": "Cut + Beard Sculpt",
+      "desc": "Full shape-up with straight razor lines",
+      "price": "$50"
+    },
+    {
+      "name": "Hot Towel Straight Razor Shave",
+      "desc": "Traditional lather, single-blade finish",
+      "price": "$40"
+    },
+    {
+      "name": "Gray Blending & Color",
+      "desc": "Natural, low-maintenance tone correction",
+      "price": "$65"
+    },
+    {
+      "name": "The Full Service",
+      "desc": "Cut, beard, hot towel shave, styling",
+      "price": "$75"
+    }
   ],
   "testimonial": {
     "quote": "I've been to a lot of barbers who cut what's fast. Ricardo cuts what's right. Worth the drive, every time.",
     "cite": "Long-time client"
   },
   "hours": [
-    { "day": "Tuesday – Friday", "time": "10:00 – 19:00" },
-    { "day": "Saturday", "time": "09:00 – 17:00" },
-    { "day": "Sunday – Monday", "time": "Closed" }
+    {
+      "day": "Tuesday – Friday",
+      "time": "10:00 – 19:00"
+    },
+    {
+      "day": "Saturday",
+      "time": "09:00 – 17:00"
+    },
+    {
+      "day": "Sunday – Monday",
+      "time": "Closed"
+    }
   ],
   "gallery": [
-    { "cat": "cut", "cat_label": "Cuts & Fades", "title": "Skin Fade, Textured Top", "image": "" },
-    { "cat": "beard", "cat_label": "Beard Work", "title": "Full Beard Sculpt", "image": "" },
-    { "cat": "color", "cat_label": "Color & Gray Blend", "title": "Natural Gray Blend", "image": "" },
-    { "cat": "cut", "cat_label": "Cuts & Fades", "title": "Classic Taper, Hard Part", "image": "" },
-    { "cat": "beard", "cat_label": "Beard Work", "title": "Straight Razor Line-Up", "image": "" },
-    { "cat": "cut", "cat_label": "Cuts & Fades", "title": "Executive Crop", "image": "" },
-    { "cat": "color", "cat_label": "Color & Gray Blend", "title": "Subtle Tone Correction", "image": "" },
-    { "cat": "beard", "cat_label": "Beard Work", "title": "Full Service Finish", "image": "" },
-    { "cat": "cut", "cat_label": "Cuts & Fades", "title": "Low Fade, Side Part", "image": "" }
+    {
+      "cat": "cut",
+      "cat_label": "Cuts & Fades",
+      "title": "Skin Fade, Textured Top",
+      "image": ""
+    },
+    {
+      "cat": "beard",
+      "cat_label": "Beard Work",
+      "title": "Full Beard Sculpt",
+      "image": ""
+    },
+    {
+      "cat": "color",
+      "cat_label": "Color & Gray Blend",
+      "title": "Natural Gray Blend",
+      "image": ""
+    },
+    {
+      "cat": "cut",
+      "cat_label": "Cuts & Fades",
+      "title": "Classic Taper, Hard Part",
+      "image": ""
+    },
+    {
+      "cat": "beard",
+      "cat_label": "Beard Work",
+      "title": "Straight Razor Line-Up",
+      "image": ""
+    },
+    {
+      "cat": "cut",
+      "cat_label": "Cuts & Fades",
+      "title": "Executive Crop",
+      "image": ""
+    },
+    {
+      "cat": "color",
+      "cat_label": "Color & Gray Blend",
+      "title": "Subtle Tone Correction",
+      "image": ""
+    },
+    {
+      "cat": "beard",
+      "cat_label": "Beard Work",
+      "title": "Full Service Finish",
+      "image": ""
+    },
+    {
+      "cat": "cut",
+      "cat_label": "Cuts & Fades",
+      "title": "Low Fade, Side Part",
+      "image": ""
+    }
   ]
 }
