@@ -1,7 +1,7 @@
 {
   "business": {
     "name": "Romeo ",
-    "phone_display": "+592 555 0142",
+    "phone_display": "+5926385149",
     "phone_link": "+15925550142",
     "whatsapp_link": "5925550142",
     "email": "hello@suarezbarberia.com",
@@ -41,7 +41,7 @@
     {
       "name": "Classic Cut",
       "desc": "Scissor & clipper, tailored to face shape",
-      "price": "$35"
+      "price": "$788"
     },
     {
       "name": "Cut + Beard Sculpt",
@@ -65,7 +65,7 @@
     }
   ],
   "testimonial": {
-    "quote": "I've been to a lot of barbers who cut what's fast. Ricardo cuts what's right. Worth the drive, every time.",
+    "quote": "I've been to a lot of barbers who cut what's fast. lukaku cuts what's right. Worth the drive, every time.",
     "cite": "Long-time client"
   },
   "hours": [
