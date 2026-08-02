@@ -1,0 +1,133 @@
+{
+  "business": {
+    "name": "Ismelis Styles",
+    "phone_display": "+592 745 9036",
+    "phone_link": "+5927459036",
+    "whatsapp_link": "5927459036",
+    "email": "ismelstyles@gmail.com",
+    "address_line1": "142 Camp Street",
+    "address_line2": "Georgetown, Guyana",
+    "booking_url": "https://ismelstyles.setmore.com"
+  },
+  "hero": {
+    "eyebrow": "Barbería & Salón — Georgetown and Cuba",
+    "heading_line1": "Corte y estilo",
+    "heading_line2": "con carácter.",
+    "subheading": "Three decades behind the chair. Precision fades, straight-razor finishes, and color work for men who don't ask twice for the same result.",
+    "portrait_image": "",
+    "portrait_initials": "IS",
+    "portrait_caption": "Ismel Styles — Owner & Stylist · Havana-trained"
+  },
+  "about": {
+    "quote": "A good haircut isn't a trend. It's a decision you make about how you carry yourself.",
+    "paragraph1": "Ismel learned the trade in Havana before bringing it to Georgetown — old-world technique, no shortcuts. Every service starts the same way: a conversation about your hair, your face, and what you actually want to look like on a Tuesday, not just for a photo.",
+    "paragraph2": "The shop keeps a short client list on purpose. Fewer chairs, more attention, and a standard that doesn't change whether it's your first visit or your two-hundredth.",
+    "stats": [
+      {
+        "number": "30+",
+        "label": "Years Behind the Chair"
+      },
+      {
+        "number": "1-on-1",
+        "label": "Every Appointment"
+      },
+      {
+        "number": "By Appt.",
+        "label": "No Walk-In Rush"
+      }
+    ]
+  },
+  "services": [
+    {
+      "name": "Classic Cut",
+      "desc": "Scissor & clipper, tailored to face shape",
+      "price": "$35"
+    },
+    {
+      "name": "Cut + Beard Sculpt",
+      "desc": "Full shape-up with straight razor lines",
+      "price": "$50"
+    },
+    {
+      "name": "Hot Towel Straight Razor Shave",
+      "desc": "Traditional lather, single-blade finish",
+      "price": "$40"
+    },
+    {
+      "name": "Gray Blending & Color",
+      "desc": "Natural, low-maintenance tone correction",
+      "price": "$65"
+    },
+    {
+      "name": "The Full Service",
+      "desc": "Cut, beard, hot towel shave, styling",
+      "price": "$75"
+    }
+  ],
+  "testimonial": {
+    "quote": "Whole heap of barbers can throw a fast fade, but Ismel does take his time and hook you up proper. Fresh, clean, line precise every single time. Real talk, you can't beat the man craft.",
+    "cite": "Regular GT Client"
+  },
+  "hours": [
+    {
+      "day": "Monday – Sunday",
+      "time": "09:00 – 20:00"
+    }
+  ],
+  "gallery": [
+    {
+      "cat": "cut",
+      "cat_label": "Cuts & Fades",
+      "title": "Skin Fade, Textured Top",
+      "image": "/uploads/skin-fade-textured-top.jpg"
+    },
+    {
+      "cat": "beard",
+      "cat_label": "Beard Work",
+      "title": "Full Beard Sculpt",
+      "image": ""
+    },
+    {
+      "cat": "color",
+      "cat_label": "Color & Gray Blend",
+      "title": "Natural Gray Blend",
+      "image": ""
+    },
+    {
+      "cat": "cut",
+      "cat_label": "Cuts & Fades",
+      "title": "Classic Taper, Hard Part",
+      "image": ""
+    },
+    {
+      "cat": "beard",
+      "cat_label": "Beard Work",
+      "title": "Straight Razor Line-Up",
+      "image": ""
+    },
+    {
+      "cat": "cut",
+      "cat_label": "Cuts & Fades",
+      "title": "Executive Crop",
+      "image": ""
+    },
+    {
+      "cat": "color",
+      "cat_label": "Color & Gray Blend",
+      "title": "Subtle Tone Correction",
+      "image": ""
+    },
+    {
+      "cat": "beard",
+      "cat_label": "Beard Work",
+      "title": "Full Service Finish",
+      "image": ""
+    },
+    {
+      "cat": "cut",
+      "cat_label": "Cuts & Fades",
+      "title": "Low Fade, Side Part",
+      "image": ""
+    }
+  ]
+}
