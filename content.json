@@ -11,17 +11,17 @@
   },
   "hero": {
     "eyebrow": "Barbería & Salón — Georgetown and Cuba",
-    "heading_line1": "Corte y estilo",
+    "heading_line1": "Corte y estilo - Cuts and Style",
     "heading_line2": "con carácter.",
     "subheading": "Three decades behind the chair. Precision fades, straight-razor finishes, and color work for men who don't ask twice for the same result.",
-    "portrait_image": "",
+    "portrait_image": "/uploads/cuba.jpg",
     "portrait_initials": "IS",
     "portrait_caption": "Ismel Styles — Owner & Stylist · Havana-trained"
   },
   "about": {
     "quote": "A good haircut isn't a trend. It's a decision you make about how you carry yourself.",
-    "paragraph1": "Ismel learned the trade in Havana before bringing it to Georgetown — old-world technique, no shortcuts. Every service starts the same way: a conversation about your hair, your face, and what you actually want to look like on a Tuesday, not just for a photo.",
-    "paragraph2": "The shop keeps a short client list on purpose. Fewer chairs, more attention, and a standard that doesn't change whether it's your first visit or your two-hundredth.",
+    "paragraph1": "Ismel learned the trade in Havana before bringing it to Georgetown; old-world technique, no shortcuts. ",
+    "paragraph2": "The shop keeps a standard that doesn't change whether it's your first visit or your two-hundredth.",
     "stats": [
       {
         "number": "30+",
@@ -85,49 +85,25 @@
       "cat": "beard",
       "cat_label": "Beard Work",
       "title": "Full Beard Sculpt",
-      "image": ""
+      "image": "/uploads/beard-sculpt.jpg"
     },
     {
       "cat": "color",
       "cat_label": "Color & Gray Blend",
       "title": "Natural Gray Blend",
-      "image": ""
+      "image": "/uploads/gray-belnd.jpg"
     },
     {
       "cat": "cut",
       "cat_label": "Cuts & Fades",
       "title": "Classic Taper, Hard Part",
-      "image": ""
+      "image": "/uploads/classic-taper-hard-part.jpg"
     },
     {
       "cat": "beard",
       "cat_label": "Beard Work",
       "title": "Straight Razor Line-Up",
-      "image": ""
-    },
-    {
-      "cat": "cut",
-      "cat_label": "Cuts & Fades",
-      "title": "Executive Crop",
-      "image": ""
-    },
-    {
-      "cat": "color",
-      "cat_label": "Color & Gray Blend",
-      "title": "Subtle Tone Correction",
-      "image": ""
-    },
-    {
-      "cat": "beard",
-      "cat_label": "Beard Work",
-      "title": "Full Service Finish",
-      "image": ""
-    },
-    {
-      "cat": "cut",
-      "cat_label": "Cuts & Fades",
-      "title": "Low Fade, Side Part",
-      "image": ""
+      "image": "/uploads/straight-razor-line-up.jpeg"
     }
   ]
 }
